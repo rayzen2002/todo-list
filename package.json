@@ -1,0 +1,19 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "TODO list using NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rayzen2002/todo-list.git"
+  },
+  "author": "Emanuel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rayzen2002/todo-list/issues"
+  },
+  "homepage": "https://github.com/rayzen2002/todo-list#readme"
+}
