@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/rayzen2002/todo-list/issues"
   },
-  "homepage": "https://github.com/rayzen2002/todo-list#readme"
+  "homepage": "https://github.com/rayzen2002/todo-list#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
