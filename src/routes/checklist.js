@@ -2,14 +2,27 @@ const express = require ('express');
 
 const router = express.Router();
 
+const Checklist = require('../model/checklist');
+
 router.get('' , (req,res)=>{
     console.log(`Router do checklist!`)
     res.send()
 })
 
-router.post('/' , (req,res)=>{
-    console.log(req.body);
-    res.status(200).send(req.body);
+router.post('/' , async (req,res)=>{
+    let { name } = req.body;
+
+    try {
+        let checklist = await Checklist.create({"name" : name})
+        res.status(200).send(checklist);
+        console.log(checklist);
+    } catch (error) {
+        res.status(422).json(error)
+        console.log(error)
+    }
+    
+    
+  
 })
 
 router.get('/:id' , (req,res)=>{
